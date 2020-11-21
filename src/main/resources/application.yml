@@ -1,0 +1,5 @@
+# Place application configuration here
+endpoints:
+  env:
+    enabled: true
+    sensitive: false

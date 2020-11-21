@@ -1,0 +1,89 @@
+{
+	"info": {
+		"_postman_id": "8b4ae490-d516-4472-a18c-6435428fb7ab",
+		"name": "micronaut-kubernetes-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "replaceConfigMap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/configmap/replace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"configmap",
+						"replace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createConfigMap",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/configmap/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"configmap",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getConfigMapTimestamp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/configmap/timestamp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"configmap",
+						"timestamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEnv",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/env",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"env"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

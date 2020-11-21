@@ -1,0 +1,6 @@
+applicationType: default
+defaultPackage: com.example
+testFramework: junit
+sourceLanguage: kotlin
+buildTool: gradle_kotlin
+features: [annotation-api, app-name, config-kubernetes, gradle, http-client, jib, junit, kotlin, kotlin-application, kubernetes, logback, management, netty-server, readme, yaml]
