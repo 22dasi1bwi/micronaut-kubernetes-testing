@@ -40,6 +40,11 @@ internal class DemoController(
     internal fun getTimestamp(): Instant = timestampService.getLatest()
 }
 
+/** Although this works just fine, for the pod which publishes the [RefreshEvent], all other pods wouldn't get their
+ * [TimestampService] bean refreshed. In order to make sure, that the updated timestamp value is injected,
+ * [TimestampService] needs to be a [io.micronaut.runtime.http.scope.RequestScope] bean. Depending on the use-case
+ * that could consume an unwanted amount of additional memory.
+ */
 @Refreshable(TIMESTAMP_PROPERTY_NAME)
 internal class TimestampService(@Value("\${timestamp:1970-01-01}") private val timestamp: String) {
 
