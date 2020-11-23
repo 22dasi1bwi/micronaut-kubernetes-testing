@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "replaceConfigMap",
+			"name": "replaceConfigMap 8080",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -17,6 +17,26 @@
 						"localhost"
 					],
 					"port": "8080",
+					"path": [
+						"configmap",
+						"replace"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "replaceConfigMap 8081",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/configmap/replace",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
 					"path": [
 						"configmap",
 						"replace"
@@ -46,7 +66,7 @@
 			"response": []
 		},
 		{
-			"name": "getConfigMapTimestamp",
+			"name": "getConfigMapTimestamp 8080",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -66,7 +86,27 @@
 			"response": []
 		},
 		{
-			"name": "getEnv",
+			"name": "getConfigMapTimestamp 8081",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/configmap/timestamp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"configmap",
+						"timestamp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEnv 8080",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -77,6 +117,25 @@
 						"localhost"
 					],
 					"port": "8080",
+					"path": [
+						"env"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEnv 8081",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/env",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
 					"path": [
 						"env"
 					]

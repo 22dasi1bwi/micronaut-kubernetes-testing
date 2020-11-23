@@ -1,3 +1,7 @@
+## Run it with the latest image
+- Execute `run.sh`.
+
+
 ## Run it locally
 
 - Install and start minikube.
